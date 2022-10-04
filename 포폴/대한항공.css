@@ -27,7 +27,7 @@ a {
 
 section {
     width: 100%;
-    /* outline: 1px solid black; */
+    outline: 1px solid black;
 }
 
 .inner {
@@ -360,10 +360,10 @@ button:hover {
     flex-direction: column;
     align-items: center;
     gap: 20px;
-    color: #555555;
+    color: rgb(0, 0, 0, .8);
     font-size: 1rem;
-    background: rgba(255, 255, 255, 0.85);
-    box-shadow: 0 2px 8px 0 rgba(19, 21, 54, 0.1);
+    background: rgba(223, 223, 223, 0.1);
+    box-shadow: 0 4px 4px 0 rgba(19, 21, 54, 0.1);
     border-radius: 10px;
     width: 140px;
     height: 160px;
@@ -587,7 +587,7 @@ iframe {
 
 .alliance {
     position: relative;
-    bottom: 50px;
+    bottom: 48px;
     height: 448px;
     background-image: linear-gradient(to top, rgba(82, 53, 116, 0.3), rgba(94, 135, 212, 0.1)), url(img/프로젝트이미지/인트로bg.jpeg);
     background-repeat: no-repeat;
@@ -656,7 +656,7 @@ iframe {
 
 .footer {
     position: relative;
-    bottom: 53px;
+    bottom: 46px;
     height: 250px;
     background: #F3F4F8;
     padding-top: 35px;
@@ -730,10 +730,11 @@ iframe {
 }
 
 .footer2 {
-    height: 150px;
+    height: 180px;
     position: relative;
-    bottom: 51px;
-    padding-top: 35px;
+    bottom: 46px;
+    padding-top: 55px;
+    outline: 1px solid black;
 }
 
 
@@ -815,6 +816,10 @@ iframe {
 
 .slide2 > .text-box {
     top: 25%;
+}
+
+.text-box a {
+    color: rgb(0, 0, 0, .9);
 }
 
 .slide1 h2, .slide2 h2 {
