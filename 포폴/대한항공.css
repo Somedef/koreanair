@@ -27,6 +27,7 @@ a {
 
 section {
     width: 100%;
+    /* outline: 1px solid black; */
 }
 
 .inner {
@@ -156,65 +157,6 @@ input[id="check1"]:checked + label::after {
 
 input:focus {
     outline: none;
-}
-
-
-
-.textbox {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 0px;
-    gap: 45px;
-    margin-top: 150px;
-}
-
-
-.textbox > h1 {
-    font-size: 2.25rem;
-}
-
-.textbox span {
-    font-size: 1.875rem;
-}
-
-.deview {
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    gap: 5px;
-}
-
-.deview > p {
-    font-weight: 400;
-    font-size: 1.125rem;
-}
-
-.deview > p:hover {
-    text-decoration: underline;
-}
-
-.page {
-    display: flex;
-    justify-content: space-between;
-    gap: 5px;
-    color: white;
-    background: rgba(0, 0, 0, 0.4);
-    border-radius: 50px;
-}
-
-.page_number {
-    display: flex;
-    gap: 5px;
-    padding-top: 4px;
-}
-
-.page_number > :first-child {
-    font-weight: 700;
-}
-
-.page > a {
-    padding-top: 4px;
 }
 
 .top {
@@ -365,7 +307,7 @@ button:hover {
 .notice {
     height: 407px;
     position: relative;
-    top: 100px;
+    bottom: 150px;
     background: #fff;
 }
 
@@ -430,7 +372,7 @@ button:hover {
 
 .event {
     position: relative;
-    top: 100px;
+    bottom: 50px;
     height: 550px;
     background: rgb(238, 245, 251, 0.3);
     padding: 70px 0;
@@ -510,8 +452,8 @@ button:hover {
 
 .content {
     position: relative;
+    bottom: 50px;
     height: 550px;
-    top: 100px;
     background: rgb(238, 245, 251, 0.3);
     padding: 70px 0;
 }
@@ -603,8 +545,8 @@ iframe {
 
 .skypass {
     position: relative;
+    bottom: 50px;
     height: 400px;
-    top: 100px;
     padding-top: 70px;
     background: rgb(238, 245, 251, 0.3);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -628,6 +570,7 @@ iframe {
     justify-content: flex-start;
     width: 100%;
     gap: 10px;
+    padding-left: 100px;
 }
 
 
@@ -644,7 +587,7 @@ iframe {
 
 .alliance {
     position: relative;
-    top: 100px;
+    bottom: 50px;
     height: 448px;
     background-image: linear-gradient(to top, rgba(82, 53, 116, 0.3), rgba(94, 135, 212, 0.1)), url(img/프로젝트이미지/인트로bg.jpeg);
     background-repeat: no-repeat;
@@ -713,7 +656,7 @@ iframe {
 
 .footer {
     position: relative;
-    top: 100px;
+    bottom: 53px;
     height: 250px;
     background: #F3F4F8;
     padding-top: 35px;
@@ -789,7 +732,8 @@ iframe {
 .footer2 {
     height: 150px;
     position: relative;
-    top: 100px;
+    bottom: 51px;
+    padding-top: 35px;
 }
 
 
