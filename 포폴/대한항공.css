@@ -22,7 +22,6 @@ body {
 
 a {
     color: black;
-
 }
 
 section {
@@ -738,6 +737,11 @@ iframe {
     /* outline: 1px solid black; */
 }
 
+.footer2 > .inner {
+    display: flex;
+    gap: 250px;
+}
+
 
 .footer2 .text_box {
     font-size: 0.875rem;
@@ -745,6 +749,11 @@ iframe {
     display: flex;
     flex-direction: column;
     gap: 8px;
+}
+
+.footer2 .icon {
+    display: flex;
+    gap: 20px;
 }
 
 .owner {
