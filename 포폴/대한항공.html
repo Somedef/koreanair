@@ -17,15 +17,15 @@
 <!-- 헤더 -->
     <header>
             <div class="inner">
-                <nav class="nav_bar">
-                    <nav class="logo">
+                <div class="nav_bar">
+                    <div class="logo">
                         <a href="#">
                             <img src="img/대한항공로고/로고.png" alt="로고">
                             <img src="img/대한항공로고/스카이팀.png" alt="로고">
                         </a>
-                    </nav>
-                    <ul class="menu">
-                        <li>
+                    </div>
+                    <nav class="menu">
+                        <div class="center">
                             <a href="#">예매</a>
                             <ul class="dep2">
                                 <li><a href="">구매 안내</a></li>
@@ -35,8 +35,8 @@
                                 <li><a href="">공동운항 안내</a></li>
                                 <li><a href="">운항 노선도</a></li>
                             </ul>
-                        </li>
-                        <li>
+                        </div>
+                        <div class="center">
                             <a href="#">공항</a>
                             <ul class="dep2">
                                 <li><a href="">수하물</a></li>
@@ -47,16 +47,17 @@
                                 <li><a href="">KAL 라운지</a></li>
                                 <li><a href="">엑설런트 프로그램</a></li>
                             </ul>
-                        </li>
-                        <li>
+                        </div>
+                        <div class="center">
                             <a href="#">기내</a>
                             <ul class="dep2">
                                 <li><a href="">클래스별 서비스</a></li>
                                 <li><a href="">기내 서비스</a></li>
                                 <li><a href="">기내 엔터테인먼트</a></li>
                                 <li><a href="">항공기 안내</a></li>
-                            </ul></li>
-                        <li>
+                            </ul>
+                        </div>
+                        <div class="center">
                             <a href="#">스카이패스</a>
                             <ul class="dep2">
                                 <li><a href="">스카이패스 소개</a></li>
@@ -64,23 +65,20 @@
                                 <li><a href="">마일리지 사용</a></li>
                                 <li><a href="">마일리지 몰</a></li>
                             </ul>
-                        </li> 
-                    </ul>               
+                        </div> 
+                    </nav>               
                     <div class="right">
-                        <div class="searcharea">
-                            <input type="search" placeholder="검색">
-                            <span>
-                                <img src="img/프로젝트이미지/돋보기.png" alt="아이콘">
-                            </span>
-                        </div>
                         <a href="#">
                             <img src="img/공지사항아이콘모음/유저.png" alt="아이콘">
                         </a>
                         <a href="#">
                             <img src="img/공지사항아이콘모음/sitemap.png" alt="아이콘">
                         </a>
+                        <a href="#">
+                            <img src="img/프로젝트이미지/돋보기.png" alt="아이콘">
+                        </a>
                     </div>
-                </nav>
+                </div>
             </div>
     </header>
 <!-- 헤더 -->
@@ -403,6 +401,7 @@
                 </div>
             </div>
             <div class="icon">
+                <a href="#"><img src="img/인증/웹접근성.png" alt=""></a>
                 <a href="#"><img src="img/인증/소비자중심.png" alt=""></a>
                 <a href="#"><img src="img/인증/isms.png" alt=""></a>
                 <a href="#"><img src="img/인증/스카이트랙스.png" alt=""></a>
@@ -419,6 +418,16 @@
         $(function(){
             $('.mainslide').slick();
         })
+
+        var header = document.querySelector('header'),
+            nav = document.querySelector('nav');
+            
+            nav.addEventListener('mouseover',function(){
+                header.style.height = '400px';
+            });
+            nav.addEventListener('mouseout',function(){
+                header.style.height = '90px';
+            });
     </script>
 
 </body>
