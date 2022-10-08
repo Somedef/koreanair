@@ -311,7 +311,6 @@ button:hover {
 .earth > a {
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
-/* 섹션1 */
 
 /* 섹션2 공지 */
 
@@ -386,7 +385,6 @@ button:hover {
     bottom: 50px;
     height: 550px;
     background: rgb(238, 245, 251, 0.3);
-    padding: 70px 0;
     /* outline: 1px solid black; */
 }
 
@@ -394,7 +392,7 @@ button:hover {
 .event > .inner {
     display: flex;
     flex-direction: column;
-    gap: 180px;
+    gap: 80px;
 }
 
 .event_top {
@@ -435,28 +433,6 @@ button:hover {
 
 .event_top > button:hover {
     background: rgb(0, 100, 222, 0.9);
-}
-
-.slide {
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
-    padding-bottom: 25px;
-    gap: 50px;
-    background: rgba(238, 245, 251, 0.3);
-    height: 220px;
-    width: 100%;
-    border-radius: 900px;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-}
-
-.slide > * {
-    width: 300px;
-    height: 340px;
-    cursor: pointer;
-    background: rgba(255, 255, 255, 0.2);
-    box-shadow: 0 4px 12px 0 rgba(31, 38, 135, 0.37);
-    border-radius: 10px;
 }
 
 
@@ -790,8 +766,11 @@ iframe {
     font-weight: 700;
 }
 
+
+/* 슬라이드 */
 .mainslide {
-    width: 100%;
+    width: 1920px;
+    margin: 0 auto;
     height: 755px;
     overflow: hidden;
     border-radius: 0 0 0 200px;
@@ -886,7 +865,7 @@ iframe {
 }
 
 .mainslide button.slick-prev {
-    left: 303px;
+    left: 16%;
     font-size: 0;
     color: transparent;
     top: 440px;
@@ -894,7 +873,7 @@ iframe {
 }
 
 .mainslide button.slick-next {
-    right: 1500px;
+    left: 18.6%;
     font-size: 0;
     color: transparent;
     background: rgb(0, 37, 108, .75);
@@ -907,6 +886,66 @@ iframe {
 
 .mainslide button.slick-next:before {
     content: "\e940";
+}
+
+.es {
+    padding-left: 80px;
+    /* outline: 1px solid black; */
+}
+
+.es img {
+    width: 320px;
+    height: 370px;
+    border-radius: 20px;
+}
+
+.es button {
+    position: absolute; 
+    z-index: 10; 
+    top: 50%; 
+    transform: translateY(-50%);
+    width: 48px;
+    height: 48px;
+    border-radius: 100%;
+    background: rgba(0, 0, 0,.25);
+    border: none;
+}
+
+.es button:before {
+    font-family: 'xeicon';
+    color: #fff;
+    font-size: 20px;
+}
+
+.es button:hover {
+    background: rgba(0, 0, 0,.22);
+}
+
+.es button.slick-prev {
+    left: 0;
+    font-size: 0;
+    color: transparent;
+}
+
+.es button.slick-next {
+    right: 0;
+    font-size: 0;
+    color: transparent;
+}
+
+.es button.slick-prev:before {
+    content: "\e93d";
+}
+
+.es button.slick-next:before {
+    content: "\e940";
+}
+/* 슬라이드 */
+
+
+/* 탑버튼 */
+.go-top:hover {
+    padding-top: 1px;
 }
 
 .go-top {
@@ -925,10 +964,7 @@ iframe {
     padding-top: 5px;
     transition: all .1s ease-out;
 }
-
-.go-top:hover {
-    padding-top: 1px;
-}
+/* 탑버튼 */
 
 
 

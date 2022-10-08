@@ -235,10 +235,12 @@
                 </div>
                 <button type="button">전체보기</button>
             </div>
-            <div class="slide">
-                <img src="img/프로젝트이미지/유럽동남아.png" alt="마일리지이벤트">
-                <img src="img/프로젝트이미지/로마.png" alt="반가워로마">
-                <img src="img/프로젝트이미지/두바이.png" alt="두바이가보싈?">
+            <div class="es">
+                <a href="#"><img src="img/프로젝트이미지/유럽동남아.png" alt="마일리지이벤트"></a>
+                <a href="#"><img src="img/프로젝트이미지/로마.png" alt="반가워로마"></a>
+                <a href="#"><img src="img/프로젝트이미지/두바이.png" alt="두바이가보싈?"></a>
+                <a href="#"><img src="img/프로젝트이미지/뉴질랜드.png" alt=""></a>
+                <a href="#"><img src="img/프로젝트이미지/부다페스트.png" alt=""></a>
             </div>
         </div>
         <div class="back"></div>
@@ -425,8 +427,16 @@
     <script>
         $(function(){
             $('.mainslide').slick();
-        })
+        });
         // 메인슬라이드
+
+        $('.es').slick({
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            autoplay: true,
+            autoplaySpeed: 2000,
+        });
+        // 이벤트슬라이드
 
         var header = document.querySelector('header'),
             nav = document.querySelector('nav');
