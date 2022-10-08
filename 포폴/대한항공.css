@@ -384,63 +384,40 @@ button:hover {
     position: relative;
     bottom: 50px;
     height: 550px;
-    background: rgb(238, 245, 251, 0.3);
-    /* outline: 1px solid black; */
+    padding-top: 33px;
+    outline: 1px solid black;
 }
-
 
 .event > .inner {
     display: flex;
+    gap: 50px;
     flex-direction: column;
-    gap: 80px;
+    outline: 1px solid black;
 }
 
 .event_top {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 590px;
-}
-
-.event_text {
-    display: flex;
     flex-direction: column;
     gap: 10px;
+    align-items: center;
+    /* outline: 1px solid black; */
 }
 
-.event_text > h2, .content_top > h2 {
-    font-size: 1.875rem;
+.event_top > h2, .content_top > h2 {
+    font-size: 2.5rem;
     font-weight: 700;
 }
 
-.event_text > p, .content_top > p {
-    font-size: 1.125rem;
+.event_top > p, .content_top > p {
+    font-size: 1.25rem;
     font-weight: 500;
     color: #00256c;
 }
 
-.event_top > button {
-    padding: 10px 20px;
-    font-size: 1rem;
-    border-radius: 30px;
-    border: none;
-    color: white;
-    background: rgb(0, 100, 222);
-    cursor: pointer;
-    transition: 0.2s;
-    align-self: flex-end;
-}
-
-.event_top > button:hover {
-    background: rgb(0, 100, 222, 0.9);
-}
-
-
 .content {
     position: relative;
     bottom: 50px;
-    height: 550px;
-    background: rgb(238, 245, 251, 0.3);
+    height: 600px;
     padding: 70px 0;
 }
 
@@ -458,15 +435,11 @@ button:hover {
     display: flex;
     flex-direction: column;
     width: 100%;
-    align-items: flex-start;
+    align-items: center;
     gap: 10px;
-    padding-left: 145px;
     position: relative;
     bottom: 50px;
-}
-
-.content_top > h2 {
-    text-align: center;
+    /* outline: 1px solid black; */
 }
 
 
@@ -960,12 +933,11 @@ iframe {
     line-height: 40px;
     display: none;
     border-radius: 100%;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
     padding-top: 5px;
     transition: all .1s ease-out;
 }
 /* 탑버튼 */
-
 
 
 
