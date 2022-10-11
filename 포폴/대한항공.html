@@ -8,8 +8,10 @@
     <title>대한항공</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
     <link rel="stylesheet" href="대한항공.css">
+    <link rel="stylesheet" media= "all and (max-width:375px)" href="대한항공m.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css">
 </head>
 
 <body style="overflow-x: hidden;">
@@ -229,8 +231,13 @@
     <section class="event">
         <div class="inner">
             <div class="event_top">
-                <h2>이벤트</h2>
-                <p>대한항공만의 특별한 혜택을 누려보세요.</p>
+                <div class="text">
+                    <h2>이벤트</h2>
+                    <p>대한항공만의 특별한 혜택을 누려보세요.</p>
+                </div>
+                <button type="button">
+                    <i class="fa-solid fa-plus fa-xl"></i>
+                </button>
             </div>
             <div class="es">
                 <a href="#"><img src="img/프로젝트이미지/유럽동남아.png" alt="마일리지이벤트"></a>
@@ -248,8 +255,13 @@
     <section class="content">
         <div class="inner">
             <div class="content_top">
-                <h2>대한항공은</h2>
-                <p>승객 여러분들을 위해 다양한 컨텐츠를 제공합니다.</p>
+                <div class="text">
+                    <h2>대한항공은</h2>
+                    <p>승객 여러분들을 위해 다양한 컨텐츠를 제공합니다.</p>
+                </div>
+                <button type="button">
+                    <i class="fa-solid fa-plus fa-xl"></i>
+                </button>
             </div>
             <div class="content_bottom">
                 <iframe width="485" height="280" src="https://www.youtube.com/embed/1aTmrpzu9gQ"
@@ -363,16 +375,17 @@
                 </div>
             </div>
             <div class="contact">
-                <div class="store">
-                    <a href=""><i class="fa-brands fa-app-store-ios fa-2xl"></i></a>
-                    <a href=""><i class="fa-brands fa-google-play fa-2xl"></i></a>
-                </div>
-                <div class="sns">
-                    <a href=""><i class="fa-brands fa-facebook fa-2xl"></i></a>
-                    <a href=""><i class="fa-brands fa-twitter fa-2xl"></i></a>
-                    <a href=""><i class="fa-brands fa-instagram fa-2xl"></i></a>
-                    <a href=""><i class="fa-brands fa-youtube fa-2xl"></i></a>
-                </div>
+                    <div class="text">
+                        <h2>Contact us</h2>
+                    </div>
+                    <div class="icon">
+                        <a href=""><i class="fa-brands fa-facebook fa-2xl"></i></a>
+                        <a href=""><i class="fa-brands fa-twitter fa-2xl"></i></a>
+                        <a href=""><i class="fa-brands fa-instagram fa-2xl"></i></a>
+                        <a href=""><i class="fa-brands fa-youtube fa-2xl"></i></a>
+                        <a href=""><i class="fa-brands fa-app-store-ios fa-2xl"></i></a>
+                        <a href=""><i class="fa-brands fa-google-play fa-2xl"></i></a>
+                    </div>                
             </div>
         </div>
     </section>
@@ -417,13 +430,56 @@
     </a>
     <!-- 탑버튼 -->
 
+    <!-- 모바일부킹 -->
+    <div class="mbook">
+        <div class="minner">
+            <div class="mtop">
+                <div class="txt">
+                    <div class="mfrom">
+                        <p>출발</p>
+                        <span><a href="#">서울(SEL)</a></span>
+                    </div>
+                    <img src="img/프로젝트이미지/Synchronize.png" alt="">
+                    <div class="mto">
+                        <p>도착</p>
+                        <span><a href="#">런던(LON)</a></span>
+                    </div>
+                </div>
+            </div>
+            <div class="mmid">
+                <div class="txt">
+                    <div class="md">
+                        <p>가는 날</p>
+                        <span><a href="#">22.11.24</a></span>
+                    </div>
+                    <img src="img/프로젝트이미지/Reset.png" alt="">
+                    <div class="mr">
+                        <p>오는 날</p>
+                        <span><a href="#">22.11.24</a></span>
+                    </div>
+                </div>
+            </div>
+            <div class="mbottom">
+                <div class="mp">
+                    <p>승객</p>
+                    <span><a href="#">성인1명</a></span>
+                </div>
+                <div class="ms">
+                    <p>좌석</p>
+                    <span><a href="#">First</a></span>
+                </div>
+            </div>
+            <button type="button">항공편 검색</button>
+        </div>
+    </div>
+<!-- 모바일부킹 -->
+
+    
     
     
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>    
     <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="https://kit.fontawesome.com/7acb30467e.js" crossorigin="anonymous"></script>
     <script src="대한항공.js"></script>
-  
-
 </body>
 </html>
