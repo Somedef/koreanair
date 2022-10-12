@@ -21,25 +21,29 @@
     }
 
     header {
-        width: 100%;
+        width: 750px;
         height: 60px!important; 
         position: absolute;
-        z-index: 100;
+        z-index: 1000;
         /* outline: 1px solid black; */
+        background: transparent;
     }
 
     header > .inner {
         /* outline: 1px solid black; */
         position: relative;
         bottom: 19px;
+        width: 700px;
     }
 
     .nav_bar {
+        width: 100%;
         display: flex;
         justify-content: space-between;
         align-items: center;
         /* outline: 1px solid black; */
     }
+
 
     .right > a:nth-child(4) {
         display: block;
@@ -52,19 +56,36 @@
         display: none;
     }
 
+    .mbg {
+        display: block;
+        width: 750px;
+        height: 500px;
+        position: absolute;
+        bottom: 568px;
+        box-sizing: border-box;
+        z-index: 100;
+        outline: 1px solid black;
+    }
+
+    .mbg img {
+        width: 100%;
+        height: auto;
+    }
+
     
     .booksection {
         width: 100%;
         background: rgba(0, 37, 108, 0.95);
-        border-radius: 25px;
+        border-radius: 30px;
         box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.2);
         position: relative;
         bottom: 0;
-        top: 150px;
+        top: 190px;
         height: auto;
         left: 0;
         padding: 20px 0;
         padding-left: 0;
+        z-index: 500;
     }
 
     .bookinner {
@@ -214,7 +235,7 @@
     .alliance {
         position: relative;
         bottom: 0;
-        top: 104px;
+        top: 106px;
         height: 400px;
         background-image: linear-gradient(to top, rgba(82, 53, 116, 0.3), rgba(94, 135, 212, 0.1)), url(img/프로젝트이미지/인트로bg.jpeg);
         background-repeat: no-repeat;
@@ -312,7 +333,7 @@
         position: relative;
         bottom: 0;
         top: 108px;
-        outline: 1px solid black;
+        /* outline: 1px solid black; */
     }
 
     .footer2 > .inner {
