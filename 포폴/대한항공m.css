@@ -9,6 +9,9 @@
 
     body {
         min-width: 750px;
+        background: url(img/프로젝트이미지/모바일비지.png) no-repeat;
+        background-size: cover;
+        background-position: -100px -550px;
     }
 
     section {
@@ -47,29 +50,12 @@
 
     .right > a:nth-child(4) {
         display: block;
-        width: 100%;
     }
 
     .nav_bar > .logo > a img:nth-child(2), .menu, .event, .content, .alliance_top > p,
     .alliance_bottom span, .list1, .list2, .list3, .contact h2, .footer2 .icon, .one, .two,
     .right > a:nth-child(n+1):nth-child(-n+3), .neardate, .upgrade a, .multi a, .earth, .mainslide {
         display: none;
-    }
-
-    .mbg {
-        display: block;
-        width: 750px;
-        height: 500px;
-        position: absolute;
-        bottom: 568px;
-        box-sizing: border-box;
-        z-index: 100;
-        outline: 1px solid black;
-    }
-
-    .mbg img {
-        width: 100%;
-        height: auto;
     }
 
     
@@ -201,7 +187,8 @@
         bottom: 0;
         height: 250px;
         padding-top: 0;
-        top: 112px;
+        top: 110px;
+        background: #fff;
     }
 
     .skypass .inner {
@@ -213,7 +200,7 @@
         height: 144px;
         background: url(img/프로젝트이미지/2023스카이패스.jpg) no-repeat;
         background-size: cover;
-        background-position: 0 -50px;
+        background-position: 0 -52px;
         box-shadow: 0 2px 2px 0 rgba(19, 21, 54, 0.1);
         margin-top: 50px;
         /* outline: 1px solid black; */
@@ -287,8 +274,8 @@
 
     .footer {
         bottom: 0;
-        top: 106px;
-        height: 250px;
+        top: 105px;
+        height: 200px;
         background: #F3F4F8;
         padding-top: 35px;
         /* outline: 1px solid black; */
@@ -332,7 +319,8 @@
         height: 100px;
         position: relative;
         bottom: 0;
-        top: 108px;
+        top: 105px;
+        background: #fff;
         /* outline: 1px solid black; */
     }
 
