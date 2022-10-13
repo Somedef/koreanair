@@ -21,6 +21,8 @@ html {
 body {
     min-width: 1360px;
     display: block;
+    position: relative;
+
 }
 
 a {
@@ -48,8 +50,7 @@ header {
     /* outline: 1px solid black; */
     overflow: hidden;
     transition: 0.4s;
-    background: linear-gradient(white 50px, rgba(255,255,255,.97)50px
-    ,rgba(255,255,255,.97));
+    background: linear-gradient(white 50px, rgba(255, 255, 255, .97)50px, rgba(255, 255, 255, .97));
 }
 
 .nav_bar {
@@ -149,12 +150,16 @@ header {
     background: rgba(0, 37, 108, 0.95);
     border-radius: 30px 0px 0px 30px;
     box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.2);
-    position: relative;
-    bottom: 160px;
+    /* position: relative; */
+    /* bottom: 160px; */
     height: 300px;
-    left: 40.3%;
+    /* left: 40.3%; */
     padding-top: 20px;
     padding-left: 60px;
+    position: absolute;
+    right: 0;
+    top: 505px;
+    z-index: 100;
 }
 
 .bookinner {
@@ -321,8 +326,10 @@ button:hover {
 .notice {
     height: 407px;
     position: relative;
-    bottom: 90px;
+    top: 100px;
     background: #fff;
+    z-index: 10;
+    outline: 1px solid black;
 }
 
 .notice > .inner {
@@ -337,6 +344,7 @@ button:hover {
 }
 
 .corona_update {
+    width: 100%;
     height: 144px;
     background: url(img/프로젝트이미지/코로나19\ 업데이트\ 센터.png);
     border-radius: 10px;
@@ -363,10 +371,13 @@ button:hover {
 }
 
 .icon {
+    width: 100%;
+    padding: 0 40px;
     display: flex;
-    justify-content: center;
+    /* justify-content: center; */
+    justify-content: space-between;
     align-items: center;
-    gap: 75px;
+    /* gap: 75px; */
 }
 
 .icon > li > a {
@@ -386,10 +397,10 @@ button:hover {
 
 .event {
     position: relative;
-    bottom: 50px;
+    top: 102px;
     height: 600px;
     padding-top: 33px;
-    /* outline: 1px solid black; */
+    outline: 1px solid black;
     background: rgb(249, 248, 255, .7);
     box-shadow: 0 4px 4px 0 rgba(19, 21, 54, 0.1);
 
@@ -447,9 +458,9 @@ button:hover {
 
 .content {
     position: relative;
-    bottom: 50px;
+    top: 102px;
     height: 600px;
-    /* outline: 1px solid black; */
+    outline: 1px solid black;
 }
 
 .content .inner {
@@ -515,6 +526,7 @@ button:hover {
 .emoji > p {
     font-size: 1.25rem;
     color: #555555;
+    white-space: wrap;
 }
 
 .text > a {
@@ -543,10 +555,10 @@ iframe {
 
 .skypass {
     position: relative;
-    bottom: 50px;
+    top: 102px;
     height: 350px;
     padding-top: 10px;
-    /* outline: 1px solid black; */
+    outline: 1px solid black;
 }
 
 .skypass .inner {
@@ -584,13 +596,14 @@ iframe {
 
 .alliance {
     position: relative;
-    bottom: 49px;
+    top: 104px;
     height: 448px;
     background-image: linear-gradient(to top, rgba(82, 53, 116, 0.3), rgba(94, 135, 212, 0.1)), url(img/프로젝트이미지/인트로bg.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     padding-top: 58px;
+    outline: 1px solid black;
 }
 
 
@@ -610,7 +623,9 @@ iframe {
 
 .alliance_bottom {
     display: flex;
-    gap: 95px;
+    justify-content: space-between;
+    width: 100%;
+    /* gap: 95px; */
 }
 
 .alliance_bottom > li > a {
@@ -654,19 +669,20 @@ iframe {
 
 .footer {
     position: relative;
-    bottom: 49px;
+    top: 106px;
     height: 250px;
     background: #F3F4F8;
     padding-top: 35px;
-    /* outline: 1px solid black; */
+    outline: 1px solid black;
 }
 
 .footer > .inner {
     display: flex;
     flex-direction: row;
+    /* justify-content: center; */
     justify-content: center;
     align-items: flex-end;
-    gap: 300px;
+    /* gap: 300px; */
     white-space: nowrap;
 }
 
@@ -709,12 +725,11 @@ iframe {
 
 
 .contact {
+    width: 50%;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
-    align-items: center;
-    margin-bottom: 10px;
+    justify-content: space-between;
+    margin-top: 25px;
+
 }
 
 .contact h2 {
@@ -732,12 +747,14 @@ iframe {
 
 .footer2 {
     height: 100px;
-    /* outline: 1px solid black; */
+    position: relative;
+    top: 107px;
+    outline: 1px solid black;
+    padding-top: 7px;
 }
 
 .footer2 > .inner {
     display: flex;
-    gap: 190px;
 }
 
 
@@ -750,9 +767,11 @@ iframe {
 }
 
 .footer2 .icon {
+    width: 50%;
     display: flex;
-    gap: 20px;
+    justify-content: space-around;
     margin-top: 25px;
+    margin-left: 20px;
 }
 
 .owner {
@@ -785,15 +804,16 @@ iframe {
 
 /* 슬라이드 */
 .mainslide {
-    width: 1920px;
-    margin: 0 auto;
+    width: 100%;
+    /* width: 1920px; */
+    /* margin: 0 auto; */
     height: 755px;
     overflow: hidden;
     border-radius: 0 0 0 200px;
     box-shadow: 0 4px 4px rgba(0, 0, 0, 0.15);
     /* outline: 1px solid black; */
-    position: relative;
-    top: 90px;
+    /* position: relative; */
+    /* top: 90px; */
 }
 
 .slide1, .slide2 {
@@ -855,14 +875,14 @@ iframe {
 }
 
 .mainslide button {
-    position: absolute; 
-    z-index: 10; 
-    top: 55%; 
+    position: absolute;
+    z-index: 10;
+    top: 55%;
     transform: translateY(-50%);
     width: 48px;
     height: 48px;
     border-radius: 100%;
-    background: rgba(0, 0, 0,.25);
+    background: rgba(0, 0, 0, .25);
     border: none;
 }
 
@@ -873,7 +893,7 @@ iframe {
 }
 
 .mainslide button:hover {
-    background: rgba(0, 0, 0,.22);
+    background: rgba(0, 0, 0, .22);
 }
 
 .mainslide button.slick-next:hover {
@@ -906,7 +926,7 @@ iframe {
 
 .es {
     padding-left: 80px;
-    /* outline: 1px solid black; */
+    outline: 1px solid black;
 }
 
 .es img {
@@ -916,14 +936,14 @@ iframe {
 }
 
 .es button {
-    position: absolute; 
-    z-index: 10; 
-    top: 50%; 
+    position: absolute;
+    z-index: 10;
+    top: 50%;
     transform: translateY(-50%);
     width: 48px;
     height: 48px;
     border-radius: 100%;
-    background: rgba(0, 0, 0,.25);
+    background: rgba(0, 0, 0, .25);
     border: none;
 }
 
@@ -934,7 +954,7 @@ iframe {
 }
 
 .es button:hover {
-    background: rgba(0, 0, 0,.22);
+    background: rgba(0, 0, 0, .22);
 }
 
 .es button.slick-prev {
@@ -982,11 +1002,86 @@ iframe {
 }
 /* 탑버튼 */
 
+/* 1920오버시 오버플로우 처리 */
+@media all and (min-width: 1920px) {
+    body {
+        overflow-x: hidden;
+        overflow-y: auto;
+    }
+}
 
+/* 브레이크포인트까지 */
+@media all and (min-width: 977px) and (max-width: 1359px) {
+    body {
+        min-width: auto;
+    }
+    .inner,
+    .content_top,
+    .event_top {
+        width: 100%;
+    }
 
+    .event {
+        height: auto;
+        padding-bottom: 25px;
+    }
 
+    .es {
+        display: none;
+    }
 
+    .content_bottom img {
+        overflow: hidden;
+    }
 
+    .emoji {
+        white-space: nowrap;
+    }
 
+    .alliance > .inner {
+        padding: 0 30px;
+    }
 
+    .alliance_bottom > li > a {
+        width: 160px;
+        height: 200px;
+        white-space: nowrap;
+    }
 
+    .footer {
+        height: auto;
+        padding: 30px 0;
+    }
+
+    .footer > .inner {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer .text_box {
+        justify-content: center;
+    }
+
+    .contact {
+        justify-content: space-between;
+    }
+
+    .contact .icon {
+        gap: 0;
+    }
+
+    .footer2 > .inner {
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer2 {
+        height: auto;
+        padding: 30px 0;
+    }
+    .footer2 .icon {
+        order: 2;
+    }
+    .footer2 .text_box {
+        order: 1;
+    }
+}

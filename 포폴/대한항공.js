@@ -1,7 +1,7 @@
 
 
 
-if ($(window).width() > 750) {
+if ($(window).width() > 976) {
     $('.mainslide').slick();
     $('.es').slick({
         slidesToShow: 3,
@@ -24,7 +24,7 @@ if ($(window).width() > 750) {
     $('.es').slick('unslick');
 }
 $(window).resize(function () {
-    if ($(window).width() > 750) {
+    if ($(window).width() > 976) {
         $('.mainslide').slick();
         $('.es').slick({
             slidesToShow: 3,

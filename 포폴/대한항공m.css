@@ -1,6 +1,6 @@
 @charset "UTF-8";
 
-@media all and (max-width:750px) {
+@media all and (max-width:976px) {
     *{word-break: keep-all;}
     
     html {
@@ -8,7 +8,7 @@
     }
 
     body {
-        min-width: 750px;
+        min-width: 976px;
         background: url(img/프로젝트이미지/모바일비지.png) no-repeat;
         background-size: cover;
         background-position: -100px -550px;
@@ -20,11 +20,11 @@
     }
 
     .inner {
-        width: 700px;
+        width: 900px;
     }
 
     header {
-        width: 750px;
+        width: 976px;
         height: 60px!important; 
         position: absolute;
         z-index: 1000;
@@ -36,7 +36,7 @@
         /* outline: 1px solid black; */
         position: relative;
         bottom: 19px;
-        width: 700px;
+        width: 900px;
     }
 
     .nav_bar {
@@ -90,7 +90,7 @@
 
     .mid {
         flex-wrap: wrap;
-        width: 700px;
+        width: 900px;
         display: flex;
         flex-direction: row;
         justify-content: center;
@@ -123,7 +123,7 @@
     }
 
     .bottom button {
-        width: 700px;
+        width: 900px;
     }
     
     
@@ -306,7 +306,8 @@
         align-items: center;
         gap: 20px;
         align-items: center;
-        margin-bottom: 10px;
+        margin-bottom: 0;
+        margin-top: 5px;
     }
     
     
