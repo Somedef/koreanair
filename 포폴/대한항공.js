@@ -1,8 +1,10 @@
 
 
 
-if ($(window).width() > 976) {
-    $('.mainslide').slick();
+if ($(window).width() > 768) {
+    $('.mainslide').slick({
+        autoplay: true,
+    });
     $('.es').slick({
         slidesToShow: 3,
         slidesToScroll: 1,
@@ -24,7 +26,7 @@ if ($(window).width() > 976) {
     $('.es').slick('unslick');
 }
 $(window).resize(function () {
-    if ($(window).width() > 976) {
+    if ($(window).width() > 768) {
         $('.mainslide').slick();
         $('.es').slick({
             slidesToShow: 3,

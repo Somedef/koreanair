@@ -47,7 +47,7 @@ header {
     padding-top: 20px;
     position: absolute;
     z-index: 100;
-    /* outline: 1px solid black; */
+    outline: 1px solid black;
     overflow: hidden;
     transition: 0.4s;
     background: linear-gradient(white 50px, rgba(255, 255, 255, .97)50px, rgba(255, 255, 255, .97));
@@ -158,7 +158,7 @@ header {
     padding-left: 60px;
     position: absolute;
     right: 0;
-    top: 505px;
+    top: 595px;
     z-index: 100;
 }
 
@@ -326,7 +326,7 @@ button:hover {
 .notice {
     height: 407px;
     position: relative;
-    top: 100px;
+    top: 200px;
     background: #fff;
     z-index: 10;
     outline: 1px solid black;
@@ -346,7 +346,7 @@ button:hover {
 .corona_update {
     width: 100%;
     height: 144px;
-    background: url(img/프로젝트이미지/코로나19\ 업데이트\ 센터.png);
+    background: url(img/프로젝트이미지/코로나19\ 업데이트\ 센터.png) 0, 0 no-repeat;
     border-radius: 10px;
     display: flex;
     align-items: center;
@@ -355,6 +355,7 @@ button:hover {
 }
 
 .corona_text {
+    width: 100%;
     color: #00256c;
     display: flex;
     flex-direction: column;
@@ -397,7 +398,7 @@ button:hover {
 
 .event {
     position: relative;
-    top: 102px;
+    top: 201px;
     height: 600px;
     padding-top: 33px;
     outline: 1px solid black;
@@ -458,7 +459,7 @@ button:hover {
 
 .content {
     position: relative;
-    top: 102px;
+    top: 202px;
     height: 600px;
     outline: 1px solid black;
 }
@@ -526,7 +527,7 @@ button:hover {
 .emoji > p {
     font-size: 1.25rem;
     color: #555555;
-    white-space: wrap;
+    white-space: nowrap;
 }
 
 .text > a {
@@ -555,7 +556,7 @@ iframe {
 
 .skypass {
     position: relative;
-    top: 102px;
+    top: 203px;
     height: 350px;
     padding-top: 10px;
     outline: 1px solid black;
@@ -566,7 +567,7 @@ iframe {
     position: relative;
     padding: 42px;
     height: 144px;
-    background: url(img/프로젝트이미지/2023스카이패스.jpg);
+    background: url(img/프로젝트이미지/2023스카이패스.jpg) 0, 0 no-repeat;
     background-size: cover;
     background-position-y: -130px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -596,7 +597,7 @@ iframe {
 
 .alliance {
     position: relative;
-    top: 104px;
+    top: 204px;
     height: 448px;
     background-image: linear-gradient(to top, rgba(82, 53, 116, 0.3), rgba(94, 135, 212, 0.1)), url(img/프로젝트이미지/인트로bg.jpeg);
     background-repeat: no-repeat;
@@ -669,7 +670,7 @@ iframe {
 
 .footer {
     position: relative;
-    top: 106px;
+    top: 205px;
     height: 250px;
     background: #F3F4F8;
     padding-top: 35px;
@@ -748,7 +749,7 @@ iframe {
 .footer2 {
     height: 100px;
     position: relative;
-    top: 107px;
+    top: 206px;
     outline: 1px solid black;
     padding-top: 7px;
 }
@@ -811,9 +812,9 @@ iframe {
     overflow: hidden;
     border-radius: 0 0 0 200px;
     box-shadow: 0 4px 4px rgba(0, 0, 0, 0.15);
-    /* outline: 1px solid black; */
-    /* position: relative; */
-    /* top: 90px; */
+    outline: 1px solid black;
+    position: relative;
+    top: 91px;
 }
 
 .slide1, .slide2 {
@@ -1011,7 +1012,7 @@ iframe {
 }
 
 /* 브레이크포인트까지 */
-@media all and (min-width: 977px) and (max-width: 1359px) {
+@media all and (min-width: 769px) and (max-width: 1359px) {
     body {
         min-width: auto;
     }
@@ -1021,17 +1022,44 @@ iframe {
         width: 100%;
     }
 
+    
+
+    .notice .icon {
+        padding: 0 30px;
+    }
+
+    .notice .icon > li > a {
+        width: 120px;
+    }
+
+    .corona_update {
+        background-size: contain;
+    }
+
     .event {
         height: auto;
         padding-bottom: 25px;
     }
 
+    
     .es {
         display: none;
     }
 
+    .es img {
+        width: 250px;
+        height: 300px;
+        border-radius: 20px;
+    }
+
+
+    .content_bottom {
+        gap: 0;
+        justify-content: space-evenly;
+    }
+
     .content_bottom img {
-        overflow: hidden;
+        display: none;
     }
 
     .emoji {
@@ -1043,9 +1071,20 @@ iframe {
     }
 
     .alliance_bottom > li > a {
-        width: 160px;
-        height: 200px;
+        width: 140px;
+        height: 180px;
         white-space: nowrap;
+        background: rgba(255, 255, 255, 0.85);
+        box-shadow: 0 0 0 0;
+        backdrop-filter: blur(0);
+        -webkit-backdrop-filter: blur(0);
+        border-radius: 10px;
+        border: 1px solid rgba(255, 255, 255, 0.18);
+        color: #000;
+        }
+
+    .alliance_bottom span {
+        display: none;
     }
 
     .footer {
@@ -1073,6 +1112,7 @@ iframe {
     .footer2 > .inner {
         flex-direction: column;
         align-items: center;
+        overflow: hidden;
     }
     .footer2 {
         height: auto;
@@ -1083,5 +1123,18 @@ iframe {
     }
     .footer2 .text_box {
         order: 1;
+    }
+}
+
+@media all and (max-width:976px) {
+    
+    .right > a:nth-child(4) {
+        display: block;
+    }
+
+    .right > a:nth-child(n+1):nth-child(-n+3),
+    .nav_bar > .logo img:nth-child(2),
+    .menu {
+        display: none;
     }
 }
