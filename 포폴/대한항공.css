@@ -47,7 +47,7 @@ header {
     padding-top: 20px;
     position: absolute;
     z-index: 100;
-    outline: 1px solid black;
+    /* outline: 1px solid black; */
     overflow: hidden;
     transition: 0.4s;
     background: linear-gradient(white 50px, rgba(255, 255, 255, .97)50px, rgba(255, 255, 255, .97));
@@ -69,15 +69,17 @@ header {
 
 
 .menu > div {
-    width: 160px;
     text-align: center;
     font-size: 1.25rem;
     font-weight: 700;
+    display: flex;
+    justify-content: center;
+    margin: 0 60px;
 }
 
 
 .menu .dep2 {
-    text-align: center;
+    /* text-align: center; */
     font-size: 1rem;
     position: absolute;
     top: 60px;
@@ -85,7 +87,7 @@ header {
     white-space: nowrap;
     line-height: 40px;
     /* outline: 1px solid black; */
-    width: 158px;
+    
 }
 
 .dep2 a {
@@ -94,10 +96,7 @@ header {
     letter-spacing: -0.5px;
 }
 
-.center {
-    display: flex;
-    justify-content: center;
-}
+
 
 .menu > div > a {
     position: relative;
@@ -196,10 +195,11 @@ header {
 }
 
 .mid {
+    width: 100%;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 50px;
+    justify-content: space-between;
+    /* align-items: center; */
+    /* gap: 50px; */
     padding: 22px 58.5px;
     background: rgb(255, 255, 255, 0.95);
     box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
@@ -329,7 +329,7 @@ button:hover {
     top: 200px;
     background: #fff;
     z-index: 10;
-    outline: 1px solid black;
+    /* outline: 1px solid black; */
 }
 
 .notice > .inner {
@@ -401,7 +401,7 @@ button:hover {
     top: 201px;
     height: 600px;
     padding-top: 33px;
-    outline: 1px solid black;
+    /* outline: 1px solid black; */
     background: rgb(249, 248, 255, .7);
     box-shadow: 0 4px 4px 0 rgba(19, 21, 54, 0.1);
 
@@ -444,7 +444,10 @@ button:hover {
 
 .event_top button:hover, .content_top button:hover {
     background: rgb(0, 100, 222, 0.9);
+    transform: rotate(360deg);
+    transition: all 0.5s linear;
 }
+
 
 .event_top > .text > h2, .content_top > .text > h2 {
     font-size: 2.5rem;
@@ -559,7 +562,7 @@ iframe {
     top: 203px;
     height: 350px;
     padding-top: 10px;
-    outline: 1px solid black;
+    /* outline: 1px solid black; */
 }
 
 .skypass .inner {
@@ -604,7 +607,7 @@ iframe {
     background-size: cover;
     background-position: center;
     padding-top: 58px;
-    outline: 1px solid black;
+    /* outline: 1px solid black; */
 }
 
 
@@ -646,6 +649,9 @@ iframe {
     color: #000;
 }
 
+
+
+
 .alliance_top > h2 {
     font-size: 1.875rem;
     color: #000000;
@@ -674,7 +680,7 @@ iframe {
     height: 250px;
     background: #F3F4F8;
     padding-top: 35px;
-    outline: 1px solid black;
+    /* outline: 1px solid black; */
 }
 
 .footer > .inner {
@@ -750,7 +756,7 @@ iframe {
     height: 100px;
     position: relative;
     top: 206px;
-    outline: 1px solid black;
+    /* outline: 1px solid black; */
     padding-top: 7px;
 }
 
