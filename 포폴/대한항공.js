@@ -72,3 +72,26 @@ $(function () {
     });
 })
 // 탑버튼
+
+
+
+$(function(){
+    $(".earth").click(function(){
+        $(".modal").show();
+    })
+});
+// 모달띄어주세요
+
+$(".modal button").click(function(){
+    $(".modal").hide();
+});
+// 버튼클릭끄기
+
+$(".modal").click(function (e) {
+    if (e.target.className != "modal") {
+      return false;
+    } else {
+      $(".modal").hide();
+    }
+  });
+//   버튼없이끄기
