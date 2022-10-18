@@ -1,8 +1,10 @@
 @charset "UTF-8";
 
 @media all and (max-width:768px) {
-    *{word-break: keep-all;}
-    
+    * {
+        word-break: keep-all;
+    }
+
     html {
         font-size: 14px;
     }
@@ -15,20 +17,12 @@
         width: 100%;
     }
 
-    section {
-        width: 100%;
-        /* outline: 1px solid black; */
-    }
-
     .inner {
         width: 100%;
     }
 
     header {
-        width: 100%;
-        height: 60px!important; 
-        position: absolute;
-        z-index: 1000;
+        height: 60px !important;
         /* outline: 1px solid black; */
         background: transparent;
     }
@@ -42,9 +36,6 @@
 
     .nav_bar {
         width: 100%;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
         /* outline: 1px solid black; */
     }
 
@@ -55,17 +46,14 @@
 
     .nav_bar > .logo > a img:nth-child(2), .menu, .event, .content, .alliance_top > p,
     .alliance_bottom span, .list1, .list2, .list3, .contact h2, .footer2 .icon, .one, .two,
-    .right > a:nth-child(n+1):nth-child(-n+3), .upgrade a, .multi a, .earth, .mainslide,
-    .skypass {
+    .right > a:nth-child(n+1):nth-child(-n+3), .upgrade a, .multi a, .earth, .mainslide {
         display: none;
     }
 
-    
+
     .booksection {
         width: 100%;
-        background: rgba(0, 37, 108, 0.95);
         border-radius: 30px;
-        box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.2);
         position: relative;
         bottom: 0;
         top: 190px;
@@ -73,158 +61,104 @@
         left: 0;
         padding: 20px 0;
         padding-left: 0;
-        z-index: 500;
-    }
-
-    .bookinner {
-        display: flex;
-        justify-content: center;
-        align-items: center;
     }
 
     .booking {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
         align-items: center;
-        gap: 20px;
         width: 100%;
     }
 
     .top {
-        gap: 0;
         padding: 10px 30px;
     }
 
     .mid {
-        flex-wrap:wrap;
-        display: flex;
+        flex-wrap: wrap;
         gap: 20px;
-        background: rgb(255, 255, 255, 0.95);
-        border-radius: 30px;
         width: 91%;
     }
 
-    .mid > li {
-        display: flex;
-        align-items: flex-start;
-
-    }
-
-    .mid > li > p {
-        font-size: 1.125rem;
-        color: #555555;
-    }
-    
-    .mid > li > span a {
-        font-size: 1.5rem;
-        font-weight: 700;
-        color: #193A7A;
-    }
 
     .bottom {
-        display: flex;
         justify-content: center;
         gap: 0;
         width: 100%;
-        margin:0 30px;
+        margin: 0 30px;
     }
 
     .bottom button {
         width: 100%;
         margin-right: 30px;
     }
-    
-    
+
+
     .notice {
         height: auto;
-        position: relative;
         margin-top: 30px;
         padding: 30px;
-        background: #fff;
         /* outline: 1px solid black; */
     }
 
     .notice .icon {
-       padding: 0;
+        padding: 0;
     }
 
     .corona_update {
-        height: 144px;
-        background: url(img/프로젝트이미지/코로나19\ 업데이트\ 센터.png);
-        border-radius: 10px;
-        display: flex;
-        align-items: center;
+
         padding-left: 20px;
-        box-shadow: 0 2px 2px 0 rgba(19, 21, 54, 0.1);
     }
 
     .corona_text {
-        color: #00256c;
-        display: flex;
-        flex-direction: column;
-        gap: 10px;
         padding: 20px;
-    }    
+    }
 
     .icon {
-        width: 100%;
-        display: flex;
-        flex-direction: row;
         justify-content: center;
-        align-items: center;
         gap: 20px;
         /* outline: 1px solid black; */
         flex-wrap: wrap;
     }
 
     .icon > li > a {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
         gap: 10px;
-        color: rgb(0, 0, 0, .8);
-        font-size: 1rem;
         background: rgba(255, 255, 255, 0.5);
         box-shadow: 0 2px 8px 0 rgba(19, 21, 54, 0.1);
-        border-radius: 10px;
-        width: 140px;
         height: 130px;
-        padding-top: 0;
+        padding-top: 15px;
         /* outline: 1px solid black; */
+    }
+
+    .skypass {
+        /* outline: 1px solid black; */
+        background: #fff;
+        margin-top: -10px;
+    }
+
+    .skypass .inner {
+        width: 89.2%;
     }
 
 
 
     .alliance {
-        position: relative;
         bottom: 0;
-        background-image: linear-gradient(to top, rgba(82, 53, 116, 0.3), rgba(94, 135, 212, 0.1)), url(img/프로젝트이미지/인트로bg.jpeg);
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
         padding: 30px;
         height: auto;
         margin-top: -5px;
+        /* outline: 1px solid black; */
     }
 
     .alliance > .inner {
         height: auto;
     }
-    
+
 
     .alliance_top > h2 {
-        font-size: 1.875rem;
-        color: #000000;
         text-align: center;
     }
 
-    
+
     .alliance_bottom {
-        width: 100%;
-        display: flex;
-        flex-direction: row;
         flex-wrap: wrap;
         justify-content: center;
         gap: 25px;
@@ -233,18 +167,7 @@
     .alliance_bottom > li > a {
         width: 120px;
         height: 140px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
         gap: 0;
-        background: rgb(255, 255, 255, .7);
-        box-shadow: 0 2px 2px 0 rgba(19, 21, 54, 0.1);
-        backdrop-filter: blur(4px);
-        -webkit-backdrop-filter: blur(4px);
-        border-radius: 10px;
-        border: 0;
-        color: #000;
     }
 
 
@@ -256,15 +179,11 @@
 
     .footer {
         bottom: 0;
-        background: #F3F4F8;
-        padding-top: 35px;
-        outline: 1px solid black;
+        /* outline: 1px solid black; */
     }
 
     .footer > .inner {
-        display: flex;
         flex-direction: column;
-        justify-content: center;
         align-items: center;
         gap: 20px;
         white-space: nowrap;
@@ -272,17 +191,14 @@
     }
 
     .footer .text_box {
-        display: flex;
         flex-direction: column;
         align-items: center;
         gap: 15px;
-        width: 100%;
     }
 
-    
+
 
     .contact {
-        display: flex;
         flex-direction: column;
         align-items: center;
         gap: 20px;
@@ -290,42 +206,24 @@
         margin-bottom: 0;
         margin-top: 5px;
     }
-    
-    
-    .contact .icon {
-        display: flex;
-        gap: 20px;
-    }
-    
+
+
     .footer2 {
-        height: 100px;
-        position: relative;
         bottom: 0;
         /* top: 105px; */
         background: #fff;
-        outline: 1px solid black;
+        /* outline: 1px solid black; */
     }
 
     .footer2 > .inner {
-        display: flex;
         justify-content: center;
-        gap: 0;
         padding-top: 10px;
     }
 
     .footer2 .text_box {
-        font-size: 0.875rem;
-        color: #555555;
-        display: flex;
-        flex-direction: column;
         align-items: center;
-        gap: 8px;
-    }
-    
-    .three {
-        text-align: center;
     }
 
-    .three > :nth-child(2) {
-        font-weight: 700;
+    .three {
+        text-align: center;
     }
