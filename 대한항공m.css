@@ -125,6 +125,7 @@
         box-shadow: 0 2px 8px 0 rgba(19, 21, 54, 0.1);
         height: 130px;
         padding-top: 15px;
+        width: 200px;
         /* outline: 1px solid black; */
     }
 
@@ -165,7 +166,7 @@
     }
 
     .alliance_bottom > li > a {
-        width: 120px;
+        width: 160px;
         height: 140px;
         gap: 0;
     }
