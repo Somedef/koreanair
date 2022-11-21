@@ -95,3 +95,8 @@ $(".modal").click(function (e) {
     }
   });
 //   버튼없이끄기
+
+$(document).on('click','a[href="#"]',function(e){
+    e.preventDefault();
+});
+// 탑이동방지
